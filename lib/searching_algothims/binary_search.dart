@@ -4,7 +4,8 @@ class BinarySearch {
     int max = arr.length - 1;
 
     while (min <= max) {
-      int mid = ((min + max) / 2).floor();
+      int mid = (min + max) ~/ 2;
+      // int mid = ((min + max) / 2).floor();
 
       if (target == arr[mid]) {
         return " Founded key at  Index $mid";
