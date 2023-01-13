@@ -9,7 +9,7 @@ void main() {
   // print(SelectionSort.selectionSort(unsortedList));
 
   // Recursion.countDown(20);
-  print(Recursion.factorial(200));
-
+  // print(Recursion.factorial(200));
+  print(Recursion.count([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10]));
   // CallStack.greet('Maggie');
 }

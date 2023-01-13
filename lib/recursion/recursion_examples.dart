@@ -17,4 +17,14 @@ class Recursion {
       return number * factorial(number - 1);
     }
   }
+
+  static count(List<int> arr) {
+    if (arr.isEmpty) {
+      return 0;
+    } else {
+      print(arr);
+      arr.removeAt(0);
+      return 1 + count(arr);
+    }
+  }
 }
