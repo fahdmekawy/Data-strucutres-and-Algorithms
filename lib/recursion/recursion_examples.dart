@@ -1,4 +1,4 @@
-class RecursionCounter {
+class Recursion {
   static countDown(int number) {
     print(number);
     // base case
@@ -7,6 +7,14 @@ class RecursionCounter {
     } else {
       // recursive case
       countDown(number - 1);
+    }
+  }
+
+  static factorial(int number) {
+    if (number == 1) {
+      return 1;
+    } else {
+      return number * factorial(number - 1);
     }
   }
 }
