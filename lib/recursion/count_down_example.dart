@@ -1,4 +1,4 @@
-class Recursion {
+class RecursionCounter {
   static countDown(int number) {
     print(number);
     // base case

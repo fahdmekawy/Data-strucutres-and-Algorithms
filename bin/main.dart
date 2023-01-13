@@ -1,3 +1,4 @@
+import 'package:data_structures/recursion/call_stack_example.dart';
 import 'package:data_structures/recursion/count_down_example.dart';
 
 void main() {
@@ -7,5 +8,7 @@ void main() {
   // print(BinarySearch.binarySearch(sortedList, 9));
   // print(SelectionSort.selectionSort(unsortedList));
 
-  Recursion.countDown(20);
+  // RecursionCounter.countDown(20);
+
+  CallStack.greet('Maggie');
 }
