@@ -8,7 +8,8 @@ void main() {
   // List<int> unsortedList = [9, 8, 7, 6, 5, 4, 3, 2, 1];
   // print(Sum.getSum(sortedList));
 
-  print(Sum.recursiveSum(sortedList));
+  // print(Sum.recursiveSum(sortedList));
+  print(Recursion.findMaxNumber(sortedList));
   // print(
   //     RecursiveBinarySearch.binarySearch(sortedList, 8, 0, sortedList.length));
 }
