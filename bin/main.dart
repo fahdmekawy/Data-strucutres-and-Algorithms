@@ -8,5 +8,5 @@ void main() {
   // List<int> sortedList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   List<int> unsortedList = [5, 3, 2, 8, 15, 4, 8, 6, 10, 12, 2, 9];
 
-  print(QuickSort.pivot(unsortedList));
+  print(QuickSort.quickSort(unsortedList));
 }

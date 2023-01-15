@@ -1,11 +1,28 @@
 class QuickSort {
   // static List<int> quickSort(List<int> list) {}
 
-  static int pivot(List arr, [int start = 0, int end = -1]) {
-    if (end == -1) {
-      end = arr.length - 1;
+  static List quickSort(List arr, [left = 0, right = -5]) {
+    if (right == -5) {
+      right = arr.length - 1;
     }
+
+    if (left < right) {
+      int pivotIndex = pivot(arr, left, right);
+      //left
+      quickSort(arr, left, pivotIndex - 1);
+      // right
+      quickSort(arr, pivotIndex + 1, right);
+    }
+
+    return arr;
+  }
+
+  // -1 is to be not nullable only
+  static int pivot(List arr, [int start = 0, int end = -1]) {
+    if (end == -1) end = arr.length - 1;
+
     var pivot = arr[start];
+
     int swapIndex = start;
 
     for (int i = start + 1; i < arr.length; i++) {
@@ -14,9 +31,7 @@ class QuickSort {
         swap(arr, swapIndex, i);
       }
     }
-    print(arr);
     swap(arr, start, swapIndex);
-    print(arr);
 
     return swapIndex;
   }
