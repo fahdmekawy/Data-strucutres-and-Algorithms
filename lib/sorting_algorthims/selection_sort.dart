@@ -1,4 +1,7 @@
 class SelectionSort {
+  // Time Complexity at (worest - average - best) cases is O(n^2)
+  // Space Complexity is O(1)
+
 // or we can needed to find biggest element
   static int findSmallest(List<int> arr) {
     int smallest = arr[0];
@@ -15,9 +18,8 @@ class SelectionSort {
 
   static List<int> selectionSort(List<int> arr) {
     final List<int> arr2 = List.empty(growable: true);
-    final arrLength = arr.length;
 
-    for (int i = 0; i < arrLength; i++) {
+    for (int i = 0; i < arr.length; i++) {
       final smallest = findSmallest(arr);
       arr2.add(arr.removeAt(smallest));
     }

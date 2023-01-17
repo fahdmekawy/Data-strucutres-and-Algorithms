@@ -1,5 +1,6 @@
 class QuickSort {
-  // static List<int> quickSort(List<int> list) {}
+  // Time Complexity at  average - best) cases is O(nLogn) and worst case is O(n^2)
+  // Space Complexity is O(logn)
 
   static List quickSort(List arr, [left = 0, right = -5]) {
     if (right == -5) {
