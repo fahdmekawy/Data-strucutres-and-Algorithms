@@ -2,8 +2,8 @@ import 'dart:math' as math;
 
 class RadixSort {
 // work for intger numbers only
-// Time complixty for all cases is O(n)
-// Space Complixty is O(n)
+// Time complixty for all cases is O(nk)
+// Space Complixty is O(n+k)
   static List<int> radixSort(List<int> arr) {
     int maxDigitCount = mostDigits(arr);
     for (int k = 0; k < maxDigitCount; k++) {
